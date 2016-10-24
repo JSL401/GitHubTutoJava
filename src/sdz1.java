@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class sdz1 {
 
@@ -12,8 +13,14 @@ public class sdz1 {
 		double nbre1=3, nbre2 = 2;
 		double resultat = nbre1/nbre2; 
 		System.out.println(resultat);
-		double  nombre= 1__000_000; 
+		double  nombre= 1_000_000; 
 		System.out.println(nombre);
+		Scanner sc = new Scanner(System.in);
+		int i  = sc.nextInt();
+		double d = sc.nextDouble();
+		long l = sc.nextLong();
+		byte b = sc.nextByte();
+		System.out.println(i+d+l+b);
 	}
-
 }
+	
