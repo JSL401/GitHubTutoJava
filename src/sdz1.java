@@ -1,26 +1,42 @@
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class sdz1 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello World !");
-		System.out.println("My name is");
-		System.out.println("Cysboy");
-		float temperature;
-		temperature = 64;
-		System.out.println(temperature);
-		double nbre1=3, nbre2 = 2;
-		double resultat = nbre1/nbre2; 
-		System.out.println(resultat);
-		double  nombre= 1_000_000; 
-		System.out.println(nombre);
-		Scanner sc = new Scanner(System.in);
-		int i  = sc.nextInt();
-		double d = sc.nextDouble();
-		long l = sc.nextLong();
-		byte b = sc.nextByte();
-		System.out.println(i+d+l+b);
+	public static void main (String[] args) {
+	Scanner sc = new Scanner(System.in); 
+	
+	String titre = "CONVERTISSEUR DEGRES CELSIUS ET DEGRES FAHRENHEIT";
+	int num = titre.length();
+	System.out.println(titre); 
+	for (int i=0;i<num;i++){
+		System.out.print("-");
+	}
+	System.out.println();
+	System.out.println("Choisissez le mode de conversion : ");
+	System.out.println("1- Convertisseur Celsius-Fahrenheit");
+	System.out.println("2- Convertisseur Fahrenheit-Celsius");
+	int i = sc.nextInt();
+	//bien penser à remettre c comme variable pour la réponse (O/N)
+	char c ='O';
+	while (c=='O'){
+	if (i==1) {
+		//de celsius à fahrenheit
+	}
+	else {
+		//de fahrenheit à celsius
+	}
+	System.out.println("Souhaitez vous convertir une autre température ? (O/N)");
+	sc.nextLine();
+	String temp  = sc.nextLine();
+	c = temp.charAt(0);
+	}
+	System.out.println("Au revoir !");
+	}
+	
+	public static double arrondi(double A, int B) {
+		return (double) ((int) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
 	}
 }
+	
 	
