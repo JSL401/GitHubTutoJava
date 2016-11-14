@@ -17,6 +17,7 @@ public class sdz1 {
 	System.out.println("1- Convertisseur Celsius-Fahrenheit");
 	System.out.println("2- Convertisseur Fahrenheit-Celsius");
 	int i = sc.nextInt();
+	sc.nextLine();
 	//bien penser à remettre c comme variable pour la réponse (O/N)
 	char c ='O';
 	while (c=='O'){
@@ -27,7 +28,6 @@ public class sdz1 {
 		//de fahrenheit à celsius
 	}
 	System.out.println("Souhaitez vous convertir une autre température ? (O/N)");
-	sc.nextLine();
 	String temp  = sc.nextLine();
 	c = temp.charAt(0);
 	}
