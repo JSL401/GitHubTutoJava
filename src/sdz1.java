@@ -21,6 +21,8 @@ public class sdz1 {
 	//bien penser à remettre c comme variable pour la réponse (O/N)
 	char c ='O';
 	while (c=='O'){
+	System.out.println("Température à convertir");
+	double old = sc.nextDouble();
 	if (i==1) {
 		//de celsius à fahrenheit
 	}
