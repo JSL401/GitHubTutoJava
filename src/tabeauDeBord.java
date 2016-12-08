@@ -20,14 +20,15 @@ public class tabeauDeBord {
 		// date de la facture 
 		System.out.println("Quel est la date de cette facture? (01/02/2016)");	
 		LocalDate factureDate = LocalDate.parse(sc.nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-		sc.nextLine();
-		System.out.println(factureDate);
 		// montant de la facture
 		System.out.println("Quel est le montant de cette facture? (en EUROS HT)");	
 		double factureMontant = sc.nextDouble();
-		sc.nextLine();
-		System.out.println(factureMontant);
-	
+		//durée de la facture
+		System.out.println("Quelle est la durée de cette facture? (en mois)"); 
+		long duree = sc.nextLong(); 
+		LocalDate factureFin = factureDate.plusMonths(duree); 
+		System.out.println("la facturation se termine le : " + factureFin);
+
 	}
 
 }
