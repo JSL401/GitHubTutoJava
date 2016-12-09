@@ -45,6 +45,8 @@ public class tabeauDeBord {
 				System.out.println("Souhaitez vous ajouter une facture Ugap ? O/N");
 				sc.nextLine();
 				reponseUgap=sc.nextLine().charAt(0);
+			
+				}
 			}
 		
 		
